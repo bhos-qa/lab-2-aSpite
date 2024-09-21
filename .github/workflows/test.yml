@@ -22,6 +22,10 @@ jobs:
         java-version: '21'
         distribution: 'adopt'
 
+    - name: Make Gradlew executable
+      run: chmod +x gradlew
+      working-directory: lab2
+
     - name: Build with Gradle
       working-directory: lab2
       run: ./gradlew build
