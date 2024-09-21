@@ -37,10 +37,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    
+    environment:
+      name: lab2
+      url: https://github.com
 
     steps:
       - name: Deployment
         run: echo "Deployment completed successfully!"
-
-    environment:
-      name: lab2
