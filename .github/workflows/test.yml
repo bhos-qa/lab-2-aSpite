@@ -41,3 +41,6 @@ jobs:
     steps:
       - name: Deployment
         run: echo "Deployment completed successfully!"
+
+    environment:
+      name: lab2
